@@ -235,13 +235,32 @@ ul {
     padding-bottom: 0;
 }
 
-/* .feature-item::before {
+.feature-item::before {
+    content: '';
     width: 270px;
     height: 120px;
     display: inline-block;
     background-color: var(--background-ourteam-and-filtrbtn-color);
-    background-image: url(../img/icons.svg#icon-antenna);
-} */
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.feature-item.icon-antenna::before {
+    background-image: url(../img/antenna.svg);
+}
+
+.feature-item.icon-clock::before {
+    background-image: url(../img/clock.svg);
+}
+
+.feature-item.icon-diagram::before {
+    background-image: url(../img/diagram.svg);
+}
+
+.feature-item.icon-astronaut::before {
+    background-image: url(../img/astronaut.svg);
+}
 
 .features-list {
     display: flex;
@@ -308,6 +327,7 @@ ul {
 
 .ourteam-item:not(:last-child) {
     margin-right: var(--primary-margin);
+    
 }
 
 .ourteam-title,
@@ -432,7 +452,6 @@ ul {
     fill: var(--accent-color);
 }
 
-
 /*-----------------------FOOTER----------------- */
 .footer {
     padding-top: 60px;
@@ -485,6 +504,60 @@ ul {
     color: var(--accent-color);
 }
 
+.footer .container {
+    display: flex;
+}
+
+.address-section {
+    margin-right: 70px;
+}
+
+.followus-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-light-color);
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.followus-soc-item {
+    width:44px;
+    height:44px;
+}
+
+.followus-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.followus-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.followus-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.followus-icon {
+    fill: var(--primary-light-color);
+}
+
+.followus-soc-link:hover,
+.followus-soc-link:focus {
+    background-color: var(--accent-color);
+}
 /*-----------------------PORTFOLIO----------------- */
 
 .filtr-buttons {
