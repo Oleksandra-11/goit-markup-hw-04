@@ -136,6 +136,17 @@ ul {
     color: var(--accent-color);
 }
 
+/* .auth.list {
+    display: flex;
+} */
+
+.auth-list-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+}
+
 .auth .mailto,
 .auth .tel {
     color: var(--primary-text-color);
@@ -144,8 +155,25 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: flex;
 }
 
+.auth-list-icon {
+    fill: currentColor;
+}
+
+
+/* .auth .tel::before {
+    content: '';
+    width: 10px;
+    height: 16px;
+    background-image: url(../img/icon-tel.svg);
+    display: block;
+    margin-right: 10px;
+} */
+
+.auth .mailto:hover .auth-list-icon,
+.auth .mailto:focus .auth-list-icon,
 .auth .mailto:hover,
 .auth .tel:hover,
 .auth .mailto:focus,
@@ -159,6 +187,13 @@ ul {
     background-color: var(--background-hero-and-footer-color);
     padding-top: 200px;
     padding-bottom: 210px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../img/Img-hero-bcg.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -199,6 +234,14 @@ ul {
 .section.features {
     padding-bottom: 0;
 }
+
+/* .feature-item::before {
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    background-color: var(--background-ourteam-and-filtrbtn-color);
+    background-image: url(../img/icons.svg#icon-antenna);
+} */
 
 .features-list {
     display: flex;
@@ -258,6 +301,9 @@ ul {
 
 .ourteam-item {
     background-color: var(--primary-light-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: var(--primary-margin);
 }
 
 .ourteam-item:not(:last-child) {
@@ -275,7 +321,7 @@ ul {
 
 .ourteam-text {
     padding-top: var(--primary-margin);
-    padding-bottom: var(--primary-margin);
+    padding-bottom: 16px;
 }
 .ourteam-title {
     color: var(--title-text-color);
@@ -290,6 +336,57 @@ ul {
     line-height: 1.19;
 }
 
+.ourteam-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.ourteam-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.ourteam-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.ourteam-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--primary-light-color);
+    color: #AFB1B8;
+}
+
+.ourteam-soc-icon {
+    fill: currentColor;
+}
+
+ .ourteam-soc-link:hover,
+ .ourteam-soc-link:focus {
+     background-color: var(--accent-color);
+     color: var(--primary-light-color);
+}
+
+
+/* .ourteam-soc-link:hover,
+.ourteam-soc-link:focus {
+    background-color: var(--accent-color);
+}
+
+.ourteam-soc-link:hover .ourteam-soc-icon,
+.ourteam-soc-link:focus  .ourteam-soc-icon {
+    fill: var(--primary-light-color);
+}
+
+
+.ourteam-soc-icon {
+    fill: #AFB1B8;
+
+} */
 /*-----------------------FOOTER----------------- */
 .footer {
     padding-top: 60px;
@@ -374,9 +471,6 @@ ul {
 
 .card {
     padding: 20px 24px;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
     background-color: var(--primary-light-color);
 }
 
@@ -388,7 +482,6 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    /* identical to box height, or 162% */
     text-align: center;
     cursor: pointer;
     border-radius: 4px;
@@ -409,6 +502,9 @@ ul {
 .filtr-button:focus {
     color: var(--primary-light-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -425,4 +521,15 @@ color: var(--title-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
+}
+.ourprojects-card {
+    max-width: 370px;
+    border: 1px solid #EEEEEE;
+}
+
+.ourprojects-card:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
