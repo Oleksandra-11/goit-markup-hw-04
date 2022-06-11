@@ -156,21 +156,12 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
+    align-items: center;
 }
 
 .auth-list-icon {
     fill: currentColor;
 }
-
-
-/* .auth .tel::before {
-    content: '';
-    width: 10px;
-    height: 16px;
-    background-image: url(../img/icon-tel.svg);
-    display: block;
-    margin-right: 10px;
-} */
 
 .auth .mailto:hover .auth-list-icon,
 .auth .mailto:focus .auth-list-icon,
@@ -327,7 +318,7 @@ ul {
 
 .ourteam-item:not(:last-child) {
     margin-right: var(--primary-margin);
-    
+
 }
 
 .ourteam-title,
