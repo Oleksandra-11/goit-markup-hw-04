@@ -434,11 +434,12 @@ ul {
 }
 
 .client-logo:hover,
-.client-logo:focus,
+.client-logo-link:focus,
 .client-logo:hover .client-logo-icon,
-.client-logo:focus .client-logo-icon {
+.client-logo-link:focus .client-logo-icon {
     border-color: var(--accent-color);
     fill: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /*-----------------------FOOTER----------------- */
