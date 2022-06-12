@@ -136,9 +136,6 @@ ul {
     color: var(--accent-color);
 }
 
-/* .auth.list {
-    display: flex;
-} */
 
 .auth-list-icon {
     width: 20px;
@@ -235,6 +232,7 @@ ul {
     border-radius: 4px;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: var(--primary-margin);
 }
 
 .feature-item.icon-antenna::before {
